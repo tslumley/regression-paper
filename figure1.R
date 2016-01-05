@@ -11,3 +11,10 @@ dev.off()
 pdf("alphabp.pdf",height=5,width=5)
 svyplot(BPXDAR~RIDAGEYR,style="trans",design=des,legend=0,xlab="Age (yrs)",ylab="Diastolic BP (mmHg)",pch=19)
 dev.off()
+
+
+pdf("thinbp.pdf",height=5,width=5)
+set.seed(2015-1-5)
+svyplot(BPXDAR~RIDAGEYR,style="subsample",sample.size=1000,design=des,legend=0,xlab="Age (yrs)",ylab="Diastolic BP (mmHg)")
+dev.off()
+
