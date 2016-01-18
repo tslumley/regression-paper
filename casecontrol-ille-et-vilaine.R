@@ -41,3 +41,7 @@ SE(grouped2)/SE(grouped2s)
 SE(cont1)/SE(cont1s)
 SE(cont2)/SE(cont2s)
 
+pdf("ille-et-vilaine.pdf",height=5,width=7)
+par(mar=c(5.1,4.1,1,1))
+dotchart(c(SE(grouped1s)/SE(grouped1), NA, SE(cont1s)/SE(cont1))^2,pch=rep(c(1,19),c(12,6)),xlab="Estimated variance increase with weighting")
+dev.off()
