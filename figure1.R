@@ -11,7 +11,7 @@ dev.off()
 
 pdf("alphabp.pdf",height=5,width=5)
 par(mar=c(5.1,4.1,1,1))
-svyplot(BPXDAR~RIDAGEYR,style="trans",design=des,legend=0,xlab="Age (yrs)",ylab="Diastolic BP (mmHg)",pch=19)
+svyplot(BPXDAR~RIDAGEYR,style="trans",design=des,legend=0,xlab="Age (yrs)",ylab="Diastolic BP (mmHg)",pch=19,alpha=c(0,0.3))
 dev.off()
 
 
